@@ -1,0 +1,12 @@
+services:
+  wings:
+    build: .
+    environment:
+      DATADIR: "/config/Wings"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/var/lib/docker/:/var/lib/docker"
+      - "/config/Wings:/config/Wings"
+    ports:
+      - 2022:2022/tcp
+      - 8080:8080/tcp
