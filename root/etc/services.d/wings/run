@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+# Run Wings, with specified data directory
+wings --config $DATADIR/config.yml
