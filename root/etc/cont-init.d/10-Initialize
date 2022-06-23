@@ -13,7 +13,7 @@ fi
 log "Checking for $DATADIR/config.yml before beginning execution"
 COUNT=1
 while [ ! -e $DATADIR/config.yml ]; do
-    log "Attempt $COUNT, config file not present in \"$DATADIR\" - retrying in 15 seconds"
+    log "Attempt $COUNT, config file \"config.yml\" not present in \"$DATADIR\" - retrying in 15 seconds"
     ((COUNT=COUNT+1))
     sleep 15
 done
