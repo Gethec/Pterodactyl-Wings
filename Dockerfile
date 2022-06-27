@@ -13,8 +13,7 @@ ADD https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/s6-
 ADD https://bitbucket.org/Gethec/projecttools/raw/master/DockerUtilities/ContainerTools /usr/bin/ContainerTools
 
 # Upgrade installed packages, install new ones
-RUN apk --no-cache --update upgrade && \
-    apk add \
+RUN apk --no-cache add \
         bash \
         tzdata && \
     # Install S6-Overlay, enable execution of Wings
