@@ -9,7 +9,7 @@ ADD https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_am
 ADD https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/s6-overlay-amd64-installer /tmp/s6-overlay
 
 # Download common tools
-ADD https://raw.githubusercontent.com/Gethec/ProjectTools/main/DockerUtilities/ContainerTools /usr/bin/ContainerTools
+ADD https://raw.githubusercontent.com/Gethec/ProjectTools/main/DockerUtilities/ContainerTools /usr/local/sbin/ContainerTools
 
 # Upgrade installed packages, install new ones
 RUN apk --no-cache add \
