@@ -1,4 +1,4 @@
-FROM docker
+FROM docker:24-dind
 ENV S6_BEHAVIOUR_IF_STAGE2_FAILS="2"
 COPY root/ /
 
